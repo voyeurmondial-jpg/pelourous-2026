@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PELOUROUS 2026</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --bleu: #1f91f2;
+            --vert: #0b5232;
+            --jaune: #f9dd1a;
+        }
+        .bg-custom-green { background-color: var(--vert); }
+        .text-custom-blue { color: var(--bleu); }
+        .btn-primary { background-color: var(--bleu); color: white; padding: 10px 20px; border-radius: 5px; }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <nav class="bg-custom-green p-4 text-white flex justify-between items-center">
+        <div class="flex items-center">
+            <div class="bg-white p-1 rounded-full mr-3">
+                <img src="/static/logo_ourous2EME_OK.jpg" alt="Logo" class="h-12 w-12 object-contain">
+            </div>
+            <span class="text-xl font-bold">PELOUROUS 2026</span>
+        </div>
+        <div>
+            <a href="/" class="px-3">Accueil</a>
+            <a href="/admin" class="px-3">Administration</a>
+        </div>
+    </nav>
+
+    <div class="container mx-auto mt-10 p-5">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>

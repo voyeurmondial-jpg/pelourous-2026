@@ -1,7 +1,8 @@
-django
-djongo
-pymongo[srv]
+Django==4.2.7
 gunicorn
 whitenoise
+pymongo==4.6.1
+dnspython
 qrcode
 Pillow
+python-dotenv
